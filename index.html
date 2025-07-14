@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Profile Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>GitHub Profile Viewer</h1>
+    <p>View anybodys GitHub profiles in real-time </p>
+    <button id="theme-toggle">🌙 Toggle Dark Mode</button> <!--  Dark mode toggle -->
+  </header>
+
+  <main>
+    <section id="search">
+      <input type="text" id="username" placeholder="Enter GitHub username">
+      <button onclick="searchUser()">Search</button>
+      <button onclick="clearRecent()">Clear</button>
+    </section>
+
+    <div id="recent-searches"></div> <!--  Recent searches -->
+
+    <div id="loader" class="hidden">Loading...</div> <!--  Skeleton loader -->
+    <section id="user-info"></section>
+    <section id="repos"></section>
+  </main>
+
+  <footer>
+    <p>Powered by GitHub API | <a href="https://github.com/YOUR_USERNAME/github-profile-viewer" target="_blank">GitHub Repo</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
